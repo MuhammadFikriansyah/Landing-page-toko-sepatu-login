@@ -20,6 +20,8 @@
   </head>
 
   <body>
+    <div class="overlay" id="overlay"></div>
+
     <!-- Navigasi bar -->
     <nav class="navbar">
       <a href="#" class="navbar-logo">Equinox<span>Shoes</span></a>
@@ -32,6 +34,7 @@
       </div>
 
       <div class="navbar-extra">
+        <a href="#" id="tombol-login">Login</a>
         <a href="#" id="tombol-search">
           <ion-icon name="search-outline"></ion-icon>
         </a>
@@ -58,6 +61,25 @@
       </main>
     </section>
     <!-- Home Section Akhir-->
+
+    <!-- Form Login -->
+    <div class="login-container" id="login-form-element">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Login" />
+      </form>
+    </div>
 
     <!-- Product Awal -->
     <section id="product" class="product">

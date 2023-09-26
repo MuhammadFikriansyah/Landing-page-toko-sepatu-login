@@ -192,3 +192,30 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "none";
   });
 });
+
+const loginButton = document.getElementById("tombol-login");
+const loginForm = document.getElementById("login-form-element");
+const overlay = document.getElementById("overlay");
+
+loginButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (loginForm.style.display === "block") {
+    loginForm.style.display = "none";
+    overlay.style.display = "none";
+  } else {
+    loginForm.style.display = "block";
+    overlay.style.display = "block";
+  }
+});
+
+const closeButton = document.getElementById("closed");
+
+closeButton.addEventListener("click", function () {
+  loginForm.style.display = "none";
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", function () {
+  loginForm.style.display = "none";
+  overlay.style.display = "none";
+});
